@@ -82,7 +82,7 @@
             </center>
             <label>¿Aún no tienes una cuenta?</label>
             <br>
-            <a href="REGISTRO.html" class="btn">Crear cuenta</a>
+            <a href="registro.html" class="btn">Crear cuenta</a>
           </form>
         </div>
       </div>
@@ -100,7 +100,7 @@
 
     if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/ColeccionApp/sw.js').then(function(registration) {
+    navigator.serviceWorker.register('sw.js').then(function(registration) {
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ', registration.scope);
     }).catch(function(err) {
