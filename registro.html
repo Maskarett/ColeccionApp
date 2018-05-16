@@ -24,17 +24,17 @@
     
 <div class="container "> 
       <div class="row">
-    <form class="col s8 offset-s2">
+    <form  id="formulario" name="formulario" method="get" class="col s8 offset-s2">
       <div class="row">
        <div class="input-field col s12 m6">
         <i class="material-icons prefix">person</i>
-          <input id="nombre" type="text" class="validate">
+          <input id="nombre" name="nombre" type="text" class="validate">
           <label for="nombre">Nombre</label>
         </div>
         <div class="input-field col s12 m6">
           <i class="material-icons prefix">person</i>
-          <input id="Apellido" type="text" class="validate">
-          <label for="Apellido">Apellido</label>
+          <input id="apellido" type="text" class="validate">
+          <label for="apellido">Apellido</label>
         </div>
       </div>
       <div class="row">
@@ -82,20 +82,40 @@
   </div>
   <div class="row">
       <a  href="index.html"  class="waves-effect waves-light btn col s12 m4"><i class="material-icons left">keyboard_arrow_left</i>Regresar</a>
-      <a  href="home.html"  class="waves-effect waves-light right btn col s12 m4"  name="action"> <i class="material-icons right">keyboard_arrow_right</i>Registrarme</a>
-      <!-- <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-          <i class="material-icons right">send</i>
-        </button> -->
+      <button value="Enviar" id="btn" name="btn" class="waves-effect waves-light right btn col s12 m4" type="submit" name="action">Registrarme
+          <i class="material-icons right">keyboard_arrow_right</i>
+        </button>
 </div>
 
     </form>
-  
-    
 
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      
+       <script type='text/javascript'>
+
+     (function(){
+
+      var formulario = document.getElementsByName('formulario')[0],
+          elementos = formulario.elements,
+          boton = document.getElementById('btn');
+
+      var validarNombre = function(e){
+         if (formulario.nombre.value == 0) {
+            alert("completa el campo nombre");
+            e.preventDefault();
+         }
+      };
+
+      var validar = function(e){
+          validarNombre(e);
+      };
+
+      formulario.addEventListener("submit",validar);
+
+     }())
+      </script>
+
       
       
     </body>

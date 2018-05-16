@@ -7,7 +7,6 @@
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link rel="manifest" href="/manifest.json">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     .navbar-fixed {
@@ -42,7 +41,7 @@ color: #0d47a1;
 
   <div class="navbar-fixed">
 
-    <nav class="nav-extended blue darken-2">
+    <nav class="nav-extended blue darken-2 ">
       <div class="nav-wrapper " class="input-field col s4 m4">
         <a href="#" class="brand-logo center ">COLECCIONAPP</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
@@ -56,12 +55,13 @@ color: #0d47a1;
             <a href="ass.html">Favoritos</a>
           </li>
           <li>
-            <a id="buscaramigos" class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="#modal2">Buscar amigos</a>
+            <a class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="#modal2">Buscar amigos</a>
           </li>
           <li>
             <a href="index.html">Salir</a>
           </li>
         </ul>
+
       </div>
 
       <div class="row ">
@@ -94,15 +94,15 @@ color: #0d47a1;
 
     </nav>
   </div>
-  <ul class="sidenav" id="mobile-demo">
+  <ul class="sidenav blue darken-2" id="mobile-demo">
     <li>
       <a href="sass.html">Mis Colecciones</a>
     </li>
     <li>
       <a href="ass.html">Favoritos</a>
     </li>
-     <li>
-      <a class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="#modal2">Buscar amigos</a>
+    <li>
+      <a href="modal2">Buscar amigos</a>
     </li>
     <br>
     <li>
@@ -110,115 +110,20 @@ color: #0d47a1;
     </li>
   </ul>
 
-  <!-- HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME -->
-
-  <div id="home" class="col s12 m12 l6">
-    <div class="container">
-      <div class="row">
-        <div class="card col s12 m12 l6">
-          <img class="activator" src="">
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Subasta de lote monedas de plata
-              <i class="material-icons right">more_vert</i>
-            </span>
-            <p>
-              <a href="#">Ver imagenes</a>
-            </p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Descripción
-              <i class="material-icons right">close</i>
-            </span>
-            <p>Esta moneda es del año 2009 y tiene la falla que dice en la leyenda</p>
-          </div>
-        </div>
-        <div class="card col s12 m12 l6">
-          <img class="activator" src="">
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Venta directa $10 escuadra
-              <i class="material-icons right">more_vert</i>
-            </span>
-            <p>
-              <a href="#">Ver imagenes</a>
-            </p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Descripción
-              <i class="material-icons right">close</i>
-            </span>
-            <p>Esta moneda es del año 2009 y tiene la falla que dice en la leyenda </p>
-          </div>
-        </div>
-        <div class="card col s12 m12 l6">
-            <img class="activator" src="">
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Venta directa $10 escuadra
-                <i class="material-icons right">more_vert</i>
-              </span>
-              <p>
-                <a href="#">Ver imagenes</a>
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Descripción
-                <i class="material-icons right">close</i>
-              </span>
-              <p>Esta moneda es del año 2009 y tiene la falla que dice en la leyenda </p>
-            </div>
-          </div>
-          <div class="card col s12 m12 l6">
-              <img class="activator" src="">
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Venta directa $10 escuadra
-                  <i class="material-icons right">more_vert</i>
-                </span>
-                <p>
-                  <a href="#">Ver imagenes</a>
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Descripción
-                  <i class="material-icons right">close</i>
-                </span>
-                <p>Esta moneda es del año 2009 y tiene la falla que dice en la leyenda </p>
-              </div>
-            </div>
-            <div class="card col s12 m12 l6">
-                <img class="activator" src="">
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Venta directa $10 escuadra
-                    <i class="material-icons right">more_vert</i>
-                  </span>
-                  <p>
-                    <a href="#">Ver imagenes</a>
-                  </p>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4">Descripción
-                    <i class="material-icons right">close</i>
-                  </span>
-                  <p>Esta moneda es del año 2009 y tiene la falla que dice en la leyenda </p>
-                </div>
-              </div>
-        
-      </div>
-    </div>
-  </div>
+  
 
   <!-- COLECCION COLECCION COLECCION COLECCION COLECCION COLECCION -->
 
-<div class="card col s12 m6">
-   <div id="newcoleccion" class="card-content waves-effect button-btn modal-trigger" href="#modal1">
-    <i class="material-icons large col s6 m6">control_point</i></div> 
-  </div>
-    
+   <div id="newcoleccion" class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="#modal2">
+    <i class="material-icons center large">control_point</i></div> 
+    </div>
                 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+  <div id="modal2" class="modal">
     <div class="modal-content">
-   <form class="col s6 offset-s2">
+   <form class="col s8 offset-s2">
           <label>
-            <h4>Nueva Colección</h4>
+            <h4>Buscar amigos</h4>
           </label>
           <br>
           <div class="row">
@@ -227,11 +132,6 @@ color: #0d47a1;
               <input id="nombre" type="text" class="validate">
               <label for="nombre">Nombre</label>
             </div>
-            <div class="input-field col s12 m6 white">
-              <i class="material-icons prefix ">create</i>
-              <input id="año" type="text" class="validate">
-              <label for="Descripcion">Descripción</label>
-            </div>
           </div>
         </form>
     </div>
@@ -239,6 +139,7 @@ color: #0d47a1;
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Crear</a>
     </div>
   </div>
+  
 
 
     <!-- VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA -->
@@ -354,86 +255,15 @@ color: #0d47a1;
             </div>
           </div>
       </div>
+
+      
     </div>
 
-
-<!-- Buscar amigos buscar amigos buscar amigos buscar amigos buscar amigos -->
-
-     
-  <!-- Modal Structure -->
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-
-              <div class="row blue darken-2">
-                <div class="col s12 m12">
-                  <ul id="tabs-swipe-demo " class="tabs ">
-                    <li class="tab  col s6 m6">
-                      <a class="active" href="#mamistad">
-                        <lavel>Mis amistades</lavel>
-                      </a>
-                    </li>
-                    <li class="tab col s6 m6">
-                      <a href="#bamistad">
-                        <lavel>Busca amistades</lavel>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-   <form id="bamistad" class="col s8 offset-s2">
-          <label>
-            <h4>BUSQUEDA DE AMISTADES</h4>
-          </label>
-          <br>
-        <div class="row">
-            <div class="input-field col s12 m6 white">
-              <i class="material-icons prefix  ">search</i>
-              <input id="bbuscar" type="text" class="validate">
-              <label for="bbuscar">Ingresa nombre</label>
-            </div>
-            <table>
-              <tr>
-                <td>Nombre</td><td>Apodo</td><td>Ciudad</td>
-              </tr>
-              <tr>
-                <td>Esteban</td><td>Tebo</td><td>Osorno</td>
-                  <td>
-                   <label>
-                        <input type="checkbox" />
-                        <span>Invitar</span>
-                   </label>
-                  </td>
-              </tr>
-            </table>
-          </div>
-    <div id="" class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Enviar solicitud de amistad</a>
-    </div>
-  </form>
-
-   <form id="mamistad" class="col s8 offset-s2">
-          <label>
-            <h4>MIS AMISTADES</h4>
-          </label>
-          <br>
-          <div class="row">
-            <div class="input-field col s12 m6 white">
-              <i class="material-icons prefix  ">search</i>
-              <input id="mbuscar" type="text" class="validate">
-              <label for="mbuscar">Ingresa nombre de tu amigo</label>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-             
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
 
-   
       $(document).ready(function () {
         $('.tabs').tabs({
           // swipeable :true
@@ -453,7 +283,6 @@ color: #0d47a1;
     $('.modal').modal();
   });
 var instance = M.Modal.getInstance(elem);
-
       //scroll
   //     document.addEventListener('DOMContentLoaded', function() {
   //   var elems = document.querySelectorAll('.scrollspy');
