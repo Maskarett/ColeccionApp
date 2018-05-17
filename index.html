@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="es" >
 
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
   
-  
+  <link type="text/css" rel="stylesheet" href="css/estilos.css" media="screen,projection" />
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <style>
@@ -21,9 +21,9 @@ h5
 
 .container
 {
-	margin-top: 80px;
+	margin-top: 10px;
 	width: 400px;
-	height: 700px;
+	height: 500px;
 }
 
 .tabs .indicator
@@ -92,12 +92,12 @@ h5
 				<h3 class="blue-text">Bienvenido</h3>
 				<div class="row">
 					<div class="input-field col s6">
-						<input id="last_name" type="text" class="validate">
-						<label for="last_name">First Name</label>
+						<input id="nombre" type="text" class="validate">
+						<label for="nombre">Nombre</label>
 					</div>
 					<div class="input-field col s6">
-						<input id="last_name" type="text" class="validate">
-						<label for="last_name">Last Name</label>
+						<input id="apellido" type="text" class="validate">
+						<label for="apellido">apellido</label>
 					</div>
 				</div>
 				<div class="row">
@@ -107,21 +107,13 @@ h5
 					</div>
 				</div>
 				<div class="row">
-					<div class="input-field col s12">
-						<input id="email-confirm" type="email" class="validate">
-						<label for="email-confirm">Email Confirmation</label>
+					<div class="input-field col s6">
+						<input id="contraseña" type="password" class="validate">
+						<label for="contraseña">Contraseña</label>
 					</div>
-				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<input id="password" type="password" class="validate">
-						<label for="password">Password</label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="input-field col s12">
-						<input id="password-confirm" type="password" class="validate">
-						<label for="password-confirm">Password Confirmation</label>
+					<div class="input-field col s6">
+						<input id="ccontraseña" type="password" class="validate">
+						<label for="ccontraseña">Repetir contraseña</label>
 					</div>
 				</div>
 				<center>

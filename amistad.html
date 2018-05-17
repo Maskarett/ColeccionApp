@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="css/estilos.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    .navbar-fixed {
+      margin-bottom: 80px;
+    }
+    .tabs .tab a
+{
+font-weight: 700; 
+color: #2196f3; 
+}
+.tabs .tab a:hover 
+{
+color: #2196f3;
+}
+ul.tabs div.indicator 
+{
+background: #1976d2 ;
+height: 3px; 
+}
+.tabs .tab a.active 
+{
+font-weight: 700;
+color: #0d47a1;
+}
+    .tabs .indicator {
+    background-color: #0d47a1;
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar-fixed">
+
+    <nav class="nav-extended blue darken-2">
+      <div class="nav-wrapper " class="input-field col s4 m4">
+        <a href="#" class="brand-logo center ">Amistades</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="sass.html">Mis Colecciones</a>
+          </li>
+          <li>
+            <a href="ass.html">Favoritos</a>
+          </li>
+          <li>
+            <a id="buscaramigos" class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="#modal2">Buscar amigos</a>
+          </li>
+          <li>
+            <a href="index.html">Salir</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row ">
+        <div class="col s12 m12">
+          <ul id="tabs-swipe-demo " class="tabs ">
+            <li class="tab  col s3 m3">
+              <a class="active" href="#seguidos">
+                seguidos
+              </a>
+            </li>
+            <li class="tab col s3 m3">
+              <a href="#seguidores">
+                seguidores
+              </a>
+            </li>
+            <li class="tab col s3 m3">
+              <a class="active" href="#buscar">
+                buscar
+              </a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+
+
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a href="sass.html">Mis Colecciones</a>
+    </li>
+    <li>
+      <a href="ass.html">Favoritos</a>
+    </li>
+     <li>
+      <a class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="#modal2">Buscar amigos</a>
+    </li>
+    <br>
+    <li>
+      <a href="index.html" class="btn down">Salir</a>
+    </li>
+  </ul>
+
+  <!-- HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME -->
+
+  <div id="seguidos" class="col s12 m12 l6">
+    <div class="container">
+      <div class="row">
+        
+  
+     seguidos
+      
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <div id="seguidores" class="col s12 m12 l6">
+    <div class="container">
+      <div class="row">
+        
+  
+     seguidores
+      
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <div id="buscar" class="col s12 m12 l6">
+    <div class="container">
+      <div class="row">
+        
+  
+     buscar
+      
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- COLECCION COLECCION COLECCION COLECCION COLECCION COLECCION -->
+
+                
+  <!-- Modal Structure -->
+ 
+
+    <!-- VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA VENTA -->
+
+   
+
+    <!-- SUBASTA SUBASTA SUBASTA SUBASTA SUBASTA SUBASTA SUBASTA SUBASTA SUBASTA SUBASTA -->
+
+
+
+
+<!-- Buscar amigos buscar amigos buscar amigos buscar amigos buscar amigos -->
+
+     
+  <!-- Modal Structure -->
+ 
+             
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+
+   
+      $(document).ready(function () {
+        $('.tabs').tabs({
+          // swipeable :true
+        });
+        $('.sidenav').sidenav();
+      });
+
+      $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton(
+      );
+  });
+     
+
+      //inicializacion de boton colección
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+var instance = M.Modal.getInstance(elem);
+
+      //scroll
+  //     document.addEventListener('DOMContentLoaded', function() {
+  //   var elems = document.querySelectorAll('.scrollspy');
+  //   var instances = M.ScrollSpy.init(elems, options);
+  // });
+
+  // // Or with jQuery
+
+  // $(document).ready(function(){
+  //   $('.scrollspy').scrollSpy();
+  // });
+  //   function(id) {
+  //   return 'a[href="#' + id +'"]';
+  // }
+
+  //     var instance = M.ScrollSpy.getInstance(elem);
+
+    </script>
+
+</body>
+
+</html>

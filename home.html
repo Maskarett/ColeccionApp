@@ -7,9 +7,13 @@
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/estilos.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="manifest" href="/manifest.json">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet"> 
   <style>
+ 
     .navbar-fixed {
       margin-bottom: 80px;
     }
@@ -44,7 +48,7 @@ color: #0d47a1;
 
     <nav class="nav-extended blue darken-2">
       <div class="nav-wrapper " class="input-field col s4 m4">
-        <a href="#" class="brand-logo center ">COLECCIONAPP</a>
+        <a  href="#" class="brand-logo center ">Inicio</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
           <i class="material-icons">menu</i>
         </a>
@@ -56,7 +60,7 @@ color: #0d47a1;
             <a href="ass.html">Favoritos</a>
           </li>
           <li>
-            <a id="buscaramigos" class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="#modal2">Buscar amigos</a>
+            <a id="buscaramigos" class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="#modal2">Amistades</a>
           </li>
           <li>
             <a href="index.html">Salir</a>
@@ -102,7 +106,7 @@ color: #0d47a1;
       <a href="ass.html">Favoritos</a>
     </li>
      <li>
-      <a class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="#modal2">Buscar amigos</a>
+      <a href="amistad.html">Amistades</a>
     </li>
     <br>
     <li>
@@ -206,15 +210,30 @@ color: #0d47a1;
   </div>
 
   <!-- COLECCION COLECCION COLECCION COLECCION COLECCION COLECCION -->
+<div id="newcoleccion" class="col s12">
+    <div class="container">
+      <div class="row">
+   <!--  <div class="card col s6 ">
+   <div id="" class="card-content waves-effect button-btn modal-trigger " href="#modal1">
+    <i class="material-icons large ">control_point</i></div> 
+  </div> -->
+   
+<div class="fixed-action-btn">
+<div id="" class="waves-effect button-btn modal-trigger " href="#modal1">
+  <a class="btn-floating btn-large blue darken-2">
+    <i class="fas fa-plus"></i>
+  </a>
+  <ul>
+  </ul>
 
-<div class="card col s12 m6">
-   <div id="newcoleccion" class="card-content waves-effect button-btn modal-trigger" href="#modal1">
-    <i class="material-icons large col s6 m6">control_point</i></div> 
   </div>
-    
+</div>
+    </div>
+  </div>
+    </div> 
                 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+  <div id="modal1" class="modal ">
     <div class="modal-content">
    <form class="col s6 offset-s2">
           <label>
@@ -223,12 +242,12 @@ color: #0d47a1;
           <br>
           <div class="row">
             <div class="input-field col s12 m6 white">
-              <i class="material-icons prefix  ">create</i>
+            
               <input id="nombre" type="text" class="validate">
               <label for="nombre">Nombre</label>
             </div>
             <div class="input-field col s12 m6 white">
-              <i class="material-icons prefix ">create</i>
+              
               <input id="año" type="text" class="validate">
               <label for="Descripcion">Descripción</label>
             </div>
@@ -249,13 +268,13 @@ color: #0d47a1;
           <form class="col s8 offset-s2">
            
               <div class="input-field col s12 m6">
-                  <i class="material-icons prefix">check</i>
+                  
                   <input id="nombre1" type="text" class="validate">
                   <label for="nombre1">Nombre</label>
                 </div>
               
               <div class="input-field col s12 m6">
-                <i class="material-icons prefix">check</i>
+                
                 <input id="pais" type="text" class="validate">
                 <label for="pais">Descripción</label>
               </div>
@@ -263,12 +282,12 @@ color: #0d47a1;
 
            
               <div class="input-field col s12 m6">
-                <i class="material-icons prefix">check</i>
+               
                 <input id="pdesde" type="text" class="validate">
                 <label for="pdesde">Precio</label>
               </div>
               <div class="input-field col s12 m6">
-                <i class="material-icons prefix">check</i>
+                
                 <input id="descripcion" type="text" class="validate">
                 <label for="descripcion">Tipo de despacho</label>
               </div>
@@ -307,12 +326,12 @@ color: #0d47a1;
           <form class="col s8 offset-s2">
             <div class="row">
               <div class="input-field col s12 m6">
-                <i class="material-icons prefix">check</i>
+                
                 <input id="nombre2" type="text" class="validate">
                 <label for="nombre2">Nombre</label>
               </div>
               <div class="input-field col s12 m6">
-                <i class="material-icons prefix">check</i>
+           
                 <input id="pais2" type="text" class="validate">
                 <label for="pais2">País</label>
               </div>
@@ -320,12 +339,12 @@ color: #0d47a1;
 
             <div class="row">
               <div class="input-field col s12 m6">
-                <i class="material-icons prefix">check</i>
+           
                 <input id="pdesde2" type="text" class="validate">
                 <label for="pdesde2">Pujas desde</label>
               </div>
               <div class="input-field col s12 m6">
-                <i class="material-icons prefix">check</i>
+             
                 <input id="descripcion2" type="text" class="validate">
                 <label for="descripcion2">Descripción</label>
               </div>
@@ -362,9 +381,9 @@ color: #0d47a1;
      
   <!-- Modal Structure -->
   <div id="modal2" class="modal">
-    <div class="modal-content">
+    <div class="modal-content ">
 
-              <div class="row blue darken-2">
+              <div class="row ">
                 <div class="col s12 m12">
                   <ul id="tabs-swipe-demo " class="tabs ">
                     <li class="tab  col s6 m6">
@@ -440,6 +459,12 @@ color: #0d47a1;
         });
         $('.sidenav').sidenav();
       });
+
+      $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton(
+      );
+  });
+     
 
       //inicializacion de boton colección
   document.addEventListener('DOMContentLoaded', function() {
