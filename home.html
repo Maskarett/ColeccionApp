@@ -5,15 +5,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Courgette|Roboto" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/estilos.css" media="screen,projection" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@4.1.1/dist/ionicons.js"></script>
+  <link href="https://unpkg.com/ionicons@4.1.1/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet"> 
   <style>
- 
+    body{
+      font-family: 'Roboto', sans-serif;
+    }
     .navbar-fixed {
       margin-bottom: 80px;
     }
@@ -39,16 +42,28 @@ color: #0d47a1;
     .tabs .indicator {
     background-color: #0d47a1;
 }
+
+.collection .collection-item.avatar {
+    min-height: 64px;
+    padding-left: 72px;
+    position: relative;
+}
+.collection .collection-item.avatar p {
+    margin: 0;
+    margin-top: 5%;
+}
   </style>
+ 
 </head>
 
 <body>
 
   <div class="navbar-fixed">
 
-    <nav class="nav-extended blue darken-2">
+    <nav class="nav-extended blue darken-2 ">
       <div class="nav-wrapper " class="input-field col s4 m4">
-        <a  href="#" class="brand-logo center ">Inicio</a>
+        <a href="#" class="brand-logo center " style="font-family: 'Courgette', cursive;">ColeccionApp</a>
+        
         <a href="#" data-target="mobile-demo" class="sidenav-trigger">
           <i class="material-icons">menu</i>
         </a>
@@ -60,7 +75,7 @@ color: #0d47a1;
             <a href="ass.html">Favoritos</a>
           </li>
           <li>
-            <a id="buscaramigos" class="card-content waves-effect button-btn modal-trigger col s12 m6 l6" href="amistad.html">Amistades</a>
+            <a href="badges.html">Buscar amigos</a>
           </li>
           <li>
             <a href="index.html">Salir</a>
@@ -98,23 +113,51 @@ color: #0d47a1;
 
     </nav>
   </div>
-  <ul class="sidenav" id="mobile-demo">
-    <li>
-      <a href="sass.html">Mis Colecciones</a>
+  <ul class="sidenav collection" id="mobile-demo">
+      <li >
+        <div class="" style="max-height: 220px; min-width: 300px;  background-image: url('./imagenes/dd.png'); background-repeat: no-repeat; background-size: cover; padding-top: 5%; ">
+           <div style=" min-width: 150px; min-height: 150px; max-width: 150px; max-height: 150px; margin-left: 25%; border-radius: 100%; ">
+              <img style =" border-radius: 100%; width: 150px; height: 150px;"src="imagenes/profile_default.png" alt="">
+           </div>
+           <div class="center" style=" color: #ffffff; ">
+            <h5>Esteban Henríquez</h5>
+           </div>
+        </div>
+          
+        </li>
+        <li class="collection-item avatar">
+            <a href="perfil.html"><i class="material-icons circle grey">perm_identity</i>
+              
+              <p>Mi Perfil</p></a>
+              
+          </li>
+    <li class="collection-item avatar">
+        <a href="#"><i class="material-icons circle grey">apps</i>
+          
+          <p>Mis Colecciones</p></a>
+          
+      </li>
+      <li class="collection-item avatar">
+          <a href="#"><i class="material-icons circle grey">star_border</i>
+            
+            <p>Favoritos</p></a>
+            
+        </li>
+        <li class="collection-item avatar">
+            <a href="amistad.html"><i class="material-icons circle grey">people_outline</i>
+              
+              <p>Amistades</p></a>
+              
+          </li>
+         
+    <li class="collection-item avatar">
+      <a href="index.html"><i class="material-icons circle grey">exit_to_app</i>
+        
+        <p>Salir</p></a>
+        
     </li>
-    <li>
-      <a href="ass.html">Favoritos</a>
-    </li>
-     <li>
-      <a href="amistad.html">Amistades</a>
-    </li>
-       <li>
-      <a href="Perfil.html">Mi perfil</a>
-    </li>
-    <br>
-    <li>
-      <a href="index.html" class="btn down">Salir</a>
-    </li>
+    
+    
   </ul>
 
   <!-- HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME -->
@@ -224,7 +267,7 @@ color: #0d47a1;
 <div class="fixed-action-btn">
 <div id="" class="waves-effect button-btn modal-trigger " href="#modal1">
   <a class="btn-floating btn-large blue darken-2">
-    <i class="fas fa-plus"></i>
+      <i class="icon ion-md-add"></i>
   </a>
   <ul>
   </ul>
@@ -469,35 +512,15 @@ color: #0d47a1;
   });
      
 
-      //inicializacion de boton colección
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
+
 
   // Or with jQuery
 
   $(document).ready(function(){
     $('.modal').modal();
   });
-var instance = M.Modal.getInstance(elem);
 
-      //scroll
-  //     document.addEventListener('DOMContentLoaded', function() {
-  //   var elems = document.querySelectorAll('.scrollspy');
-  //   var instances = M.ScrollSpy.init(elems, options);
-  // });
-
-  // // Or with jQuery
-
-  // $(document).ready(function(){
-  //   $('.scrollspy').scrollSpy();
-  // });
-  //   function(id) {
-  //   return 'a[href="#' + id +'"]';
-  // }
-
-  //     var instance = M.ScrollSpy.getInstance(elem);
+   
 
     </script>
 
